@@ -1,0 +1,175 @@
+@media not screen  {
+/* Моя версия сайта до модуля "Продвинутый CSS" */
+    body {
+        margin: 0;
+        background-color: #ffedb3;
+    }
+    header {
+        top: 0;
+        position: sticky;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        background-color: rgb(237, 222, 168);
+    }
+    .header-link {
+     margin: 0 20px;
+     font-family: "Nunito";
+    }
+    .link:hover {
+        color: rgb(0, 0, 0);
+        transition: all;
+        transition-duration: 1s;
+    }
+    .link {
+        color: rgb(179, 37, 37);
+    }
+    .amgs_one {
+         position: absolute;
+        left: 0%;
+        top: 0.5%;
+    }
+    .amgs_two {
+     position: absolute;
+     right: 0%;
+     top: 0.5%;
+     transform: scale(-1, 1)
+    }
+    .top {
+    margin:0 ;
+    }
+    main {
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+    .top ~ .title {
+        display:inline;
+        font-style: oblique;
+        border: 2px solid black;
+        border-radius: 10%;
+        background-color: #fde9a7;
+    }
+    .img {
+        margin: 1%;
+        border: 2px solid black;
+    }
+    .img:hover {
+        rotate: 360deg;
+        transition: all;
+        transition-duration: 2s;
+    }
+    li {
+        list-style-position: inside;
+        list-style-type: "\2764";
+        font-family: "Nunito";
+    }
+    span {
+        color: red;
+        font-style: italic;
+    }
+    .foot {
+        margin: 0;
+    }
+    .title {
+        font-family: "PT Serif";
+    }
+    p {
+        font-family: "Nunito"
+    }
+}
+@media screen {
+    body {
+        font-family: "PT Serif";
+        margin: 0;
+        background-color: #ffedb3;
+    }
+    .title {
+        font-family: "Nunito";
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(237, 222, 168);
+        border-bottom: 1px solid black;
+    }
+    .amgs_one {
+        order: 1;
+    }
+    .amgs_two {
+        order: 3;
+        transform: scale(-1, 1);
+
+    }
+   .head_list {
+        order: 2;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+   }
+   .link {
+        color: rgb(179, 37, 37);
+   }
+   .link:hover {
+        color: rgb(0, 0, 0);
+        transition: all;
+        transition-duration: 1s;
+    }
+    main {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top {
+        border: 4mm ridge rgba(211, 220, 50, .6);
+    }
+    .top ~ .title {
+        display:inline;
+        font-style: oblique;
+        border: 2px solid black;
+        border-radius: 10%;
+        background-color: #fde9a7;
+    }
+    .img {
+        border: 2px solid black;
+    }
+    .img:hover {
+        rotate: 360deg;
+        transition: all;
+        transition-duration: 2s;
+    }
+    p {
+        border: 1px dashed black;
+    }
+    .main__point {
+        list-style-position: inside;
+        list-style-type: "\2764";
+    }
+    .main__list {
+        border: 1px dashed black;
+    }
+    footer {
+        border-top: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 50px 1fr;
+        height: 50px;
+    }
+
+    .lobster{
+        max-height: 100%;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        justify-self: center;
+    }
+    .foot_p {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .foot_p {
+        font-size: 20px;
+    }
+}
